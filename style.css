@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+/*Al establecer esta propiedad en border-box para todos los elementos utilizando el selector universal *, 
+se asegura de que todos los elementos del documento HTML se comporten de la misma manera y tengan el mismo modelo de caja. 
+Esto puede facilitar la tarea de diseñar y desarrollar la apariencia y el diseño del sitio web.*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    width: 90;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: black;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    -webkit-transition: all 300ms ease-in;
+}
+
+.panel h3 {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    opacity: 0;
+    /*backdrop-filter: blur(10px);*/
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+        display: none;
+    }
+}
