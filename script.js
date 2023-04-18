@@ -1,5 +1,5 @@
 
-/*David Mercado*/
+/*David Mercado Ortiz*/
 /**Este código de JavaScript utiliza el método querySelectorAll() 
  * para seleccionar todos los elementos en el documento HTML que tienen la clase panel. 
  * Luego, el método forEach() se usa para iterar sobre cada elemento seleccionado
