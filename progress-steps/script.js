@@ -35,6 +35,11 @@ prev.addEventListener('click', () =>{
     update()
 })
 
+
+/*La función update() actualiza la visualización del formulario cada vez que el usuario 
+hace clic en un botón de navegación. Primero, itera a través de todos los círculos en el formulario
+ y agrega la clase "active" a los círculos anteriores al círculo activo y elimina la clase "active" 
+ de los círculos posteriores al círculo activo.*/ 
 function update() {
     circles.forEach((circle, idx) => {
         if(idx < currentActive){
