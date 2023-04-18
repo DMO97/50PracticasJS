@@ -1,11 +1,20 @@
 /*David Mercado Ortiz*/
+/*Esta seccion se encarga de seleccionar los elementos del html con los 
+que se piensaq trabajar*/
 const progress = document.getElementById('progress')
 const prev = document.getElementById('prev')
 const next = document.getElementById('next')
 const circles = document.querySelectorAll('.circle')
 
+/*Inicializar una variable currentActive la cual siturara el contador en la 
+Primera posicion*/
 let currentActive = 1
 
+/*Cuando el usuario hace clic en el botón "Next" o "Prev", la variable 
+currentActive se actualiza para reflejar la parte actual del proceso. 
+Si currentActive es mayor que el número de círculos, se establece en el 
+número máximo de círculos. Si currentActive es menor que 1, se establece 
+en 1. Después de actualizar currentActive, se llama a la función update().*/
 next.addEventListener('click', () =>{
     currentActive++
 
