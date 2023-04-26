@@ -34,14 +34,23 @@ h1 {
     transition: transform 0.4s ease;
 }
 
+/*establece el estilo para los elementos con la clase "box" 
+que son pares (es decir, que aparecen en la segunda, cuarta, 
+sexta, etc. posición). Establece la posición de la caja utilizando 
+transformación para mover la caja fuera de la pantalla hacia la izquierda.*/
+
 .box:nth-of-type(even) {
     transform: translateX(-400%);
 }
 
+/*establece el estilo para las cajas que tienen la clase "show". 
+Establece la posición de la caja utilizando transformación para 
+mover la caja al centro de la pantalla.*/
 .box.show {
     transform: translateX(0);
   }
   
+  /*Tamaño de letra de 55 pixeles*/
   .box h2 {
     font-size: 45px;
   }
