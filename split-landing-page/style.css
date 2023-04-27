@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
-  --left-bg-color: rgba(255, 255, 255, 0.432);
+  --left-bg-color: rgba(255, 255, 255, 0.164);
   --right-bg-color: rgba(43, 43, 43, 0.651);
+  --left-letter-color-hover: white;
   --left-btn-hover-color: rgb(3, 0, 185);
   --right-btn-hover-color: rgba(28, 122, 28, 1);
   --hover-width: 75%;
@@ -31,7 +32,7 @@ h1 {
   white-space: nowrap;
 }
 
-h1 Playstation {
+.Playstation {
     font-size: 4rem;
     color: #000000;
     position: absolute;
@@ -59,9 +60,28 @@ h1 Playstation {
   padding: 1.5rem;
 }
 
+.btnplay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: #000000;
+  border: #000000 solid 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 15rem;
+  padding: 1.5rem;
+}
+
 .split.left .btn:hover {
   background-color: var(--left-btn-hover-color);
   border-color: var(--left-btn-hover-color);
+  color: var(--left-letter-color-hover)
 }
 
 .split.right .btn:hover {
